@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>강원테크노파크</title>
+<meta name="description" content="강원테크노파크는 강원 곳곳에서 기업과 함께 일하는 지역산업의 파트너입니다.">
+<link rel="icon" href="../assets-shared/img/favicon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hd" id="hd">
+  <a class="hd-logo" href="./">강원테크노파크</a>
+  <button class="hd-menu" type="button" id="menuOpen" aria-expanded="false" aria-controls="menu">메뉴</button>
+  <button class="hd-search" type="button" id="searchOpen" aria-label="검색">
+    <svg viewBox="0 0 22 22" width="22" height="22" aria-hidden="true"><circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M14.3 14.3 19.5 19.5" stroke="currentColor" stroke-width="1.3"/></svg>
+  </button>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <div class="menu-in grid">
+    <p class="lbl menu-lbl" id="menuLbl">메뉴</p>
+    <div class="menu-body">
+      <form class="menu-form" id="searchForm" role="search" hidden>
+        <input id="q" type="search" placeholder="공고·시설·사이트 검색" autocomplete="off" aria-label="검색어">
+      </form>
+      <ul class="menu-res" id="searchRes" hidden></ul>
+      <ul class="dis-list menu-list" id="menuList"></ul>
+    </div>
+  </div>
+  <button class="menu-close" type="button" id="menuClose">닫기</button>
+</div>
+
+<main>
+  <section class="hero" id="hero" aria-label="강원테크노파크 소개">
+    <h1 class="intro grid"><span>강원테크노파크는 강원 곳곳에서 기업과 함께 일하는 지역산업의 파트너입니다.</span></h1>
+    <div class="band" id="band" aria-roledescription="사진 띠" aria-label="강원 곳곳의 강원테크노파크 단지">
+      <div class="band-items" id="bandItems"></div>
+      <canvas class="band-gl" id="bandGl" aria-hidden="true"></canvas>
+    </div>
+    <div class="cap" id="cap" aria-live="polite">
+      <p class="cap-t" id="capT"></p>
+      <p class="cap-d" id="capD"></p>
+      <p class="cap-route" id="capRoute"></p>
+    </div>
+  </section>
+
+  <section class="sec dis grid" aria-labelledby="disH">
+    <h2 class="lbl dis-lbl" id="disH">사업 안내</h2>
+    <ul class="dis-list" id="disList"></ul>
+  </section>
+
+  <section class="sec news" aria-labelledby="newsH">
+    <div class="sec-head grid">
+      <h2 class="lbl" id="newsH">TP NOW</h2>
+      <a class="more" id="newsMore" href="#" target="_blank" rel="noopener">전체 보기 <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="news-row" id="newsRow"></div>
+    <div class="news-nav grid">
+      <div class="news-arrows">
+        <button type="button" id="newsPrev" aria-label="이전 소식">←</button>
+        <button type="button" id="newsNext" aria-label="다음 소식">→</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec ev" aria-labelledby="evH">
+    <div class="sec-head grid">
+      <h2 class="lbl" id="evH">지금 접수 중인 공고</h2>
+      <a class="more" id="evMore" href="#" target="_blank" rel="noopener">전체 공고 <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="ev-table grid" role="table" aria-labelledby="evH">
+      <div class="ev-th" role="row"><p role="columnheader">공고</p><p role="columnheader">분야</p><p role="columnheader">마감</p></div>
+      <div id="evRows"></div>
+    </div>
+  </section>
+
+  <section class="sec duo grid" aria-label="입주 안내와 경영공시">
+    <a class="card card-s" id="cardA" href="#" target="_blank" rel="noopener">
+      <div class="card-img"><img src="../assets-shared/photo/hqsign-s.jpg" alt="강원테크노파크 건물 입구의 '지역산업의 True Partner' 간판" loading="lazy" width="960" height="473"></div>
+      <h3>입주 안내</h3>
+      <p id="cardAp"></p>
+    </a>
+    <a class="card card-l" id="cardB" href="#" target="_blank" rel="noopener">
+      <div class="card-img"><img src="../assets-shared/photo/aerial3b-s.jpg" alt="강원테크노파크 건물과 주변 숲 항공 사진" loading="lazy" width="960" height="473"></div>
+      <h3>경영공시</h3>
+      <p>운영계획과 결과, 재무정보, 임직원현황, 규정, 회의록, 감사결과를 공개합니다.</p>
+    </a>
+  </section>
+
+  <section class="sec proj grid" id="places" aria-labelledby="projH">
+    <h2 class="lbl proj-lbl" id="projH">강원 곳곳의 시설</h2>
+    <div class="proj-body">
+      <ul class="proj-list" id="projList"></ul>
+      <a class="more proj-more" id="projMore" href="#" target="_blank" rel="noopener"><span aria-hidden="true">→</span> 시설현황 전체 보기</a>
+    </div>
+  </section>
+
+  <section class="sec duo duo2 grid" aria-label="문의와 관련 사이트">
+    <div class="card card-l">
+      <div class="card-img"><img src="../assets-shared/photo/lab2-s.jpg" alt="강원테크노파크 실험실에서 이야기하는 연구원 두 사람" loading="lazy" width="960" height="536"></div>
+      <h3>문의</h3>
+      <p id="contactP"></p>
+    </div>
+    <div class="card card-s">
+      <div class="card-img"><img src="../assets-shared/photo/fab-s.jpg" alt="분석 장비 앞에서 일하는 연구원" loading="lazy" width="960" height="473"></div>
+      <h3>관련 사이트</h3>
+      <p id="sysP"></p>
+    </div>
+  </section>
+</main>
+
+<footer class="ft">
+  <div class="ft-top grid">
+    <a class="ft-logo" href="./" aria-label="강원테크노파크"><img src="../assets-shared/img/logo-navy.png" alt="강원테크노파크" width="150" height="36"></a>
+    <div class="ft-col"><h3>공고안내</h3><ul id="ftA"></ul></div>
+    <div class="ft-col"><h3>사업·입주</h3><ul id="ftB"></ul></div>
+    <div class="ft-col"><h3>기관</h3><ul id="ftC"></ul></div>
+  </div>
+  <div class="ft-search grid">
+    <form id="ftForm" role="search"><input id="ftQ" type="search" placeholder="검색" aria-label="검색"><button type="submit" aria-label="검색">+</button></form>
+  </div>
+  <div class="ft-bot grid">
+    <p>© 강원테크노파크</p>
+    <p id="ftTel"></p>
+    <p id="ftAddr" class="ft-addr"></p>
+  </div>
+</footer>
+
+<img class="hover-img" id="hoverImg" alt="" aria-hidden="true">
+
+<script src="../assets-shared/base.js"></script>
+<script src="../assets-shared/facilities.js"></script>
+<script src="../assets-shared/notices.js"></script>
+<script src="../assets-shared/home-lists.js"></script>
+<script src="../assets-shared/gw-core.js"></script>
+<script src="js/strip.js"></script>
+<script src="js/page.js"></script>
+</body>
+</html>

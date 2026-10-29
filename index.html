@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>강원테크노파크 메인 화면 시안 2개 — 어니스트패밀리</title>
+<meta property="og:title" content="강원테크노파크 메인 화면 시안 2개">
+<meta property="og:description" content="1안 강원 한 바퀴 — 손을 옮기면 춘천에서 삼척까지 강원테크노파크 단지가 입체로 지나갑니다. 2안 검은 바위 속에서 — 헤드램프로 비추면 탄광 아래에서 오늘의 강원테크노파크가 드러납니다.">
+<meta property="og:image" content="https://honest-family.github.io/gwtp-renewal-1477/img/og.jpg">
+<meta property="og:url" content="https://honest-family.github.io/gwtp-renewal-1477/">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{--ink:#111;--sub:#5f636b;--line:#e4e6ea;--soft:#f4f5f7}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--ink);font-family:"Pretendard Variable",Pretendard,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;font-size:16px;line-height:1.6;word-break:keep-all;overflow-wrap:anywhere}
+a{color:inherit}
+img{display:block;max-width:100%;height:auto}
+.wrap{width:min(1180px,100% - 40px);margin:0 auto}
+.top{border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.top img{height:30px;width:auto}
+.top span{font-size:13px;color:var(--sub)}
+.hero{padding:64px 0 36px}
+.kicker{font-size:14px;font-weight:600;color:var(--sub);margin:0 0 14px}
+h1{font-size:clamp(32px,5vw,60px);line-height:1.14;letter-spacing:-.035em;font-weight:700;margin:0 0 20px}
+.lead{font-size:clamp(16px,1.6vw,19px);color:#383c44;max-width:780px;margin:0}
+.drafts{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding:32px 0 20px}
+.card{border-top:2px solid var(--ink);padding-top:18px;display:flex;flex-direction:column}
+.card .no{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600;color:var(--sub);margin-bottom:6px}
+.card .rec{font-size:12px;font-weight:700;color:#fff;background:#21305b;padding:3px 8px;border-radius:2px}
+.card h2{font-size:clamp(26px,2.6vw,34px);letter-spacing:-.03em;line-height:1.2;margin:0 0 10px}
+.card p{margin:0 0 14px;color:#383c44}
+.shots{position:relative;display:block;background:var(--soft);aspect-ratio:16/10.4;overflow:hidden;margin:4px 0 16px;text-decoration:none}
+.shots .pc{position:absolute;left:0;top:0;width:80%;height:auto}
+.shots .m{position:absolute;right:3.5%;bottom:5%;width:21%;height:auto;border-radius:10px;box-shadow:0 6px 24px rgba(0,0,0,.18)}
+.how{list-style:none;padding:0;margin:0 0 18px;border-top:1px solid var(--line)}
+.how li{display:grid;grid-template-columns:88px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
+.how b{font-weight:600}
+.how span{color:#383c44}
+.open{align-self:flex-start;display:inline-flex;gap:8px;align-items:center;font-weight:600;font-size:17px;text-decoration:none;border-bottom:2px solid var(--ink);padding-bottom:2px}
+.sec{padding:44px 0 8px}
+.sec h3{font-size:clamp(22px,2.4vw,28px);letter-spacing:-.025em;margin:0 0 18px}
+.sec .note{color:var(--sub);margin:-8px 0 18px;font-size:15px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:0 0 26px}
+.pair figure{margin:0}
+.pair img{width:100%;aspect-ratio:16/10;object-fit:cover;background:var(--soft)}
+.pair figcaption{font-size:14px;color:var(--sub);padding-top:8px}
+.pair figcaption b{color:var(--ink);font-weight:600}
+.three{margin:0 0 16px;padding-left:22px}
+.three li{margin:0 0 10px;font-size:17px}
+.copy{font:inherit;font-weight:600;font-size:15px;padding:10px 16px;border:1px solid var(--ink);background:#fff;color:var(--ink);cursor:pointer;border-radius:2px}
+.cmp{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cmp figure{margin:0}
+.cmp img{width:100%;aspect-ratio:390/844;object-fit:cover;object-position:top;background:var(--soft);border-radius:8px}
+.cmp figcaption{font-size:14px;color:var(--sub);padding-top:8px}
+.cmp figcaption b{color:var(--ink)}
+.mat{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.mat div{border-top:1px solid var(--ink);padding-top:12px;font-size:15px;color:#383c44}
+.mat b{display:block;color:var(--ink);font-size:16px;margin-bottom:6px}
+.mat q{display:block;margin-top:8px;color:var(--sub);font-size:14px}
+.src{padding-left:20px;color:#383c44;font-size:15px}
+.src li{margin:0 0 8px}
+.foot{border-top:1px solid var(--line);margin-top:48px;padding:22px 0 40px;font-size:13px;color:var(--sub)}
+@media (max-width:860px){
+  .drafts,.pair{grid-template-columns:1fr}
+  .cmp{grid-template-columns:repeat(3,1fr);gap:8px}
+  .mat{grid-template-columns:1fr}
+  .how li{grid-template-columns:76px 1fr}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><img src="img/logo-navy.png" alt="재단법인 강원테크노파크" width="150" height="36"><span>메인 화면 시안 · 2026년 10월</span></div></header>
+
+<section class="hero"><div class="wrap">
+  <p class="kicker">강원테크노파크 홈페이지 리뉴얼</p>
+  <h1>강원테크노파크의 실제 장면으로<br>다시 만든 첫 화면 두 가지</h1>
+  <p class="lead">회로 기판 그림 대신, 강원테크노파크 홍보영상에 담긴 실제 단지·현장 장면으로 첫 화면을 채웠습니다. 화면 짜임은 세계적으로 디자인이 좋은 누리집 한 곳씩을 직접 재서 그대로 따랐고, 손을 대면 그 사진이 반응합니다.</p>
+</div></section>
+
+<div class="wrap drafts" id="drafts">
+  <article class="card">
+    <div class="no">1안 <span class="rec">권장</span></div>
+    <h2>강원 한 바퀴</h2>
+    <p>흰 바탕에 큰 문장 한 줄, 그 아래로 강원테크노파크 단지 항공사진이 이어집니다. 손을 옮기면 서쪽 춘천에서 동쪽 삼척까지 사진이 지나가고, 사진 속 건물이 뒷산보다 빨리 움직여 기차 창밖처럼 입체로 보입니다.</p>
+    <a class="shots" href="1/index.html" aria-label="1안 열기"><img class="pc" src="img/d1-pc.jpg" alt="1안 컴퓨터 첫 화면" loading="lazy"><img class="m" src="img/d1-m.jpg" alt="1안 휴대폰 첫 화면" loading="lazy"></a>
+    <ul class="how">
+      <li><b>손이 닿으면</b><span>사진 띠가 손 쪽으로 흐르고, 가운데 사진 속 건물이 손을 따라 입체로 움직임</span></li>
+      <li><b>내리면</b><span>사업 안내 · 지금 접수 중인 공고(마감일) · TP NOW · 시설 15곳 목록</span></li>
+      <li><b>화면 짜임</b><span>스뇌헤타(노르웨이 건축사무소) 누리집 첫 화면을 재서 따름</span></li>
+    </ul>
+    <a class="open" href="1/index.html">1안 열기 <span>→</span></a>
+  </article>
+  <article class="card">
+    <div class="no">2안</div>
+    <h2>검은 바위 속에서</h2>
+    <p>화면 가득 어두운 탄광 사진과 거대한 GWTP. 손(헤드램프)을 움직이면 빛이 지나간 자리마다 오늘의 강원테크노파크 단지가 드러납니다. 강원테크노파크 2026 홍보영상의 첫 문장 그대로입니다.</p>
+    <a class="shots" href="2/index.html" aria-label="2안 열기"><img class="pc" src="img/d2-pc.jpg" alt="2안 컴퓨터 첫 화면" loading="lazy"><img class="m" src="img/d2-m.jpg" alt="2안 휴대폰 첫 화면" loading="lazy"></a>
+    <ul class="how">
+      <li><b>손이 닿으면</b><span>헤드램프 빛이 따라가며 탄광 아래 오늘의 단지를 비춤, 충분히 비추면 화면 전체가 바뀜</span></li>
+      <li><b>내리면</b><span>지역산업의 True Partner · 지금 접수 중인 공고 · 시설 · TP NOW · 연락처</span></li>
+      <li><b>화면 짜임</b><span>네이버 1784 누리집 첫 화면을 재서 따름</span></li>
+    </ul>
+    <a class="open" href="2/index.html">2안 열기 <span>→</span></a>
+  </article>
+</div>
+
+<section class="sec"><div class="wrap">
+  <h3>따른 원본과 나란히 — 컴퓨터 첫 화면</h3>
+  <p class="note">원본의 글꼴 굵기·글자 크기·여백·사진 자리를 재서 같은 자리에 강원테크노파크 자료를 넣었습니다.</p>
+  <div class="pair">
+    <figure><img src="img/ref1-pc.jpg" alt="스뇌헤타 누리집 첫 화면" loading="lazy"><figcaption><b>원본</b> · 스뇌헤타 snohetta.com</figcaption></figure>
+    <figure><img src="img/d1-pc.jpg" alt="1안 첫 화면" loading="lazy"><figcaption><b>1안</b> · 강원 한 바퀴</figcaption></figure>
+  </div>
+  <div class="pair">
+    <figure><img src="img/ref2-pc.jpg" alt="네이버 1784 누리집 첫 화면" loading="lazy"><figcaption><b>원본</b> · 네이버 1784 1784.navercorp.com</figcaption></figure>
+    <figure><img src="img/d2-pc.jpg" alt="2안 첫 화면" loading="lazy"><figcaption><b>2안</b> · 검은 바위 속에서</figcaption></figure>
+  </div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <h3>무엇이 나아졌나 — 세 줄</h3>
+  <ol class="three" id="three">
+    <li>첫 화면이 회로 기판 그림이 아니라 강원테크노파크의 실제 단지와 현장 장면입니다 — 손을 대면 그 사진이 움직입니다.</li>
+    <li>지금 신청할 수 있는 공고가 마감일(D-day)과 함께 첫 화면 바로 아래에 보입니다.</li>
+    <li>춘천·강릉·원주·삼척·태백·홍천의 시설 15곳과 TP NOW 소식을 휴대폰 한 손으로 찾을 수 있습니다.</li>
+  </ol>
+  <button class="copy" type="button" id="copyBtn">세 줄 복사</button>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <h3>지금 홈페이지와 나란히 — 휴대폰 첫 화면</h3>
+  <div class="cmp">
+    <figure><img src="img/now-m.jpg" alt="지금 강원테크노파크 홈페이지 휴대폰 첫 화면" loading="lazy"><figcaption><b>지금</b> · 검색창 아래 작은 배너, 곧바로 공지 목록</figcaption></figure>
+    <figure><img src="img/d1-m.jpg" alt="1안 휴대폰 첫 화면" loading="lazy"><figcaption><b>1안</b> · 큰 문장과 단지 사진 띠</figcaption></figure>
+    <figure><img src="img/d2-m.jpg" alt="2안 휴대폰 첫 화면" loading="lazy"><figcaption><b>2안</b> · 탄광을 비추는 헤드램프</figcaption></figure>
+  </div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <h3>강원테크노파크만의 재료에서 출발했습니다</h3>
+  <div class="mat">
+    <div><b>곳곳에 있는 시설</b>춘천·강릉·원주·삼척·태백·홍천의 지원센터·벤처공장 15곳<q>시설현황 — 춘천 강릉 원주 삼척 태백 홍천</q></div>
+    <div><b>검은 바위에서 온 이야기</b>탄광의 강원에서 오늘의 신산업으로<q>거친 땅과 검은 바위 속에서 우리는 희망을 캐내고 (2026 홍보영상)</q></div>
+    <div><b>지역산업의 파트너</b>단지 정문 간판의 문구<q>지역산업의 True Partner</q></div>
+  </div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <h3>쓴 자료</h3>
+  <ul class="src">
+    <li>사진: 강원테크노파크 홍보영상(2026년·2023년, 유튜브 강원테크노파크 채널)의 실제 장면. 영상 위에 얹힌 자막·제목 글자만 AI로 지웠습니다(12장). 실제 제작 때는 원본 영상·사진 파일을 받아 바꿔 넣습니다.</li>
+    <li>시설 사진·공고·공지·입찰·채용·보도자료: 강원테크노파크 누리집(gwtp.or.kr), 2026년 10월 28~29일 기준. 접수 상태와 D-day는 여는 날짜로 계산합니다.</li>
+    <li>사진 속 입체 움직임: 사진마다 깊이 지도를 무료 공개 모델(Depth Anything V2)로 만들어 씀.</li>
+    <li>화면 짜임: 1안 스뇌헤타(snohetta.com), 2안 네이버 1784(1784.navercorp.com) — 글자 크기·여백·사진 자리를 직접 재서 맞춤.</li>
+  </ul>
+</div></section>
+
+<footer class="foot"><div class="wrap">어니스트패밀리 · 강원테크노파크 홈페이지 리뉴얼 메인 화면 시안</div></footer>
+<script>
+document.getElementById('copyBtn').addEventListener('click', function () {
+  var t = Array.prototype.map.call(document.querySelectorAll('#three li'), function (li, i) { return (i + 1) + '. ' + li.textContent.trim(); }).join('\n');
+  var b = this;
+  (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(function () { b.textContent = '복사했습니다'; }, function () { b.textContent = '복사가 막혀 있어요 — 길게 눌러 선택하세요'; });
+});
+</script>
+</body>
+</html>
